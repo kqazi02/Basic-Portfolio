@@ -2,51 +2,62 @@
 <html>
 	<head>
 		<title>Kashan Ali Qazi - Home</title>
-		<!-- <link rel="stylesheet" type="text/css" href="???"> -->
+		<!--adding reset css-->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 
 	</head>
 	<body>
-
 		<!--Header for the page-->
-		<header>
-			<!--Header first part, page heading-->
-			<div id="title"><h1>Kashan Ali Qazi</h1></div>
-			<nav>
-				<a href="contact.html">Contact</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="#">About</a>
-			</nav>
-		</header>
-		<!-- division for main content-->
-		<div class="mainBody">
-			<h1>About Me</h1>
-			<img id="self" src="assets/images/self.jpg" alt="Kashan Ali Qazi">
-			<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<header>
+				<!--Header first part, page heading-->
+				<div id="pageTitle">
+					<h1>Kashan Ali Qazi</h1>
+				</div>
+				<!-- navigation pane -->
+				<nav>
+					<a id="contact" href="contact.html">Contact</a>
+					<a id="portfolio" href="portfolio.html">Portfolio</a>
+					<a id="about" href="#">About</a>
+				</nav>
+			</header>
+		<!-- setting a wrapper to move the entire content of the page-->
+		<div id="wrapper">
+			<!-- division for main content-->
+			<section class="mainBody">
+				<h1 id ="mainHeading">About Me</h1>
+				<img id="self" src="assets/images/self.jpg" alt="Kashan Ali Qazi">
+				<section id="intro">
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</section>
+			</section>
+			<!-- division for the sidebar -->
+			<aside class="sideBar">
+				<h2 id="sideHeading">Connect With Me</h2>
+				<a href="https://github.com/kqazi02" target="_blank">
+					<img class="icon" src="assets/images/github.png" alt="Github">
+				</a>
+				
+				<a href="https://www.linkedin.com/in/kashan-ali-qazi-eit-66768a35" target="_blank">
+					<img class="icon" src="assets/images/linkedin.png" alt="LinkedIn">
+				</a>
+				<a href="http://stackoverflow.com/users/6856141/kqazi02" target="_blank">
+					<img class="icon" src="assets/images/stackoverflow.png" alt="Stack Overflow">
+				</a>			
+			</aside>
 		</div>
-		<!-- division for the sidebar -->
-		<aside class="sideBar">
-			<h2>Connect With Me</h2>
-			<a href="#"><img src="assets/images/github.png" alt="Github"></a>
-			<a href="#"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
-			<a href="#"><img src="assets/images/stackoverflow.png" alt="Stack Overflow"></a>			
-		</aside>
 
-		<!-- footer-->
-		<footer>
-			&#169; Copyright 2016 Kashan Ali Qazi
-		</footer>
-
+			<!-- footer-->
+			<footer>
+				&#169; Copyright 2016 Kashan Ali Qazi
+			</footer>
 	</body>
 </html>

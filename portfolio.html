@@ -2,52 +2,67 @@
 <html>
 	<head>
 		<title>Kashan Ali Qazi - Portfolio</title>
-		<!-- <link rel="stylesheet" type="text/css" href="???"> -->
+		<!--adding reset css-->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 	</head>
 	<body>
-
 		<!--Header for the page-->
 		<header>
 			<!--Header first part, page heading-->
-			<div id="title"><h1>Kashan Ali Qazi</h1></div>
+			<div id="pageTitle">
+				<h1>Kashan Ali Qazi</h1>
+			</div>
+			<!--navigation pane-->
 			<nav>
-				<a href="contact.html">Contact</a>
-				<a href="#">Portfolio</a>
-				<a href="index.html">About</a>
+				<a id ="contact" href="contact.html">Contact</a>
+				<a id="portfolio" href="#">Portfolio</a>
+				<a id="about" href="index.html">About</a>
 			</nav>
 		</header>
-		<!-- division for main content-->
-		<div class="mainBody">
-			<h1>Portfolio</h1>
-			<section id="hangman">
-				<img src="assets/images/bike.jpg" alt="Hangman">
-				Hangman
+		<!-- setting a wrapper to style the entire content of the page and isolating header and footer-->
+		<div id="wrapper">
+			<!-- division for main content-->
+			<section class="mainBody">
+				<h1 id="mainHeading">Portfolio</h1>
+				<section id="hangman">
+					<img src="assets/images/bike.jpg" alt="Hangman">
+					Hangman
+				</section>
+				<section id="rpgGame">
+					<img src="assets/images/vegas.jpg" alt="RPG Game">
+					RPG Game
+				</section>
+				<section id="trivia">
+					<img src="assets/images/board.jpg" alt="Trivia Game">
+					Trivia Game
+				</section>
+				<section id="widget">
+					<img src="assets/images/lambo.jpg" alt="Rutgers Info Widget">
+					Rutgers Info Widget
+				</section>
+				<section>
+					<img src="assets/images/linux.jpg" alt="Rock Paper Scissors">
+					Rock Paper Scissors
+				</section>
 			</section>
-			<section id="rpgGame">
-				<img src="assets/images/vegas.jpg" alt="RPG Game">
-				RPG Game
-			</section>
-			<section id="trivia">
-				<img src="assets/images/board.jpg" alt="Trivia Game">
-				Trivia Game
-			</section>
-			<section id="widget">
-				<img src="assets/images/lambo.jpg" alt="Rutgers Info Widget">
-				Rutgers Info Widget
-			<section>
-				<img src="assets/images/linux.jpg" alt="Rock Paper Scissors">
-				Rock Paper Scissors
-			</section>
-		</div>
-		<!-- division for the sidebar -->
-		<aside class="sideBar">
-			<h2>Connect With Me</h2>
-			<a href="#"><img src="assets/images/github.png" alt="Github"></a>
-			<a href="#"><img src="assets/images/linkedin.png" alt="LinkedIn"></a>
-			<a href="#"><img src="assets/images/stackoverflow.png" alt="Stack Overflow"></a>			
-		</aside>
+			<!-- division for the sidebar -->
+			<aside class="sideBar">
+				<h2 id="sideHeading">Connect With Me</h2>
+				<a href="https://github.com/kqazi02" target="_blank">
+					<img class="icon" src="assets/images/github.png" alt="Github">
+				</a>
+				
+				<a href="https://www.linkedin.com/in/kashan-ali-qazi-eit-66768a35" target="_blank">
+					<img class="icon" src="assets/images/linkedin.png" alt="LinkedIn">
+				</a>
+				<a href="http://stackoverflow.com/users/6856141/kqazi02" target="_blank">
+					<img class="icon" src="assets/images/stackoverflow.png" alt="Stack Overflow">
+				</a>			
+			</aside>
 
+		</div>
 		<!-- footer-->
 		<footer>
 			&#169; Copyright 2016 Kashan Ali Qazi
