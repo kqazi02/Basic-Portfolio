@@ -1,9 +1,13 @@
+/* push the footer to the bottom */
+html, body {
+	height: 100%;
+}
+
 body {
 	font-family: "Arial", "Helvetica Neue", Helvetica, sans-serif;
 	margin: 0 auto;
 	color: #777777;
 	background-image: url("../images/concrete_seamless.png");
-	/*background-color: red;*/
 }
 
 
@@ -40,9 +44,6 @@ a {
 
 footer {
 	clear: both;
-	/*background-color: #666666;*/
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	height: 20px;
 	padding: 35px 0;
@@ -51,12 +52,32 @@ footer {
 	background: linear-gradient(to bottom, #4aaaa5 0%, #4aaaa5 15%,#000000 15%, #666666 15%, #666666 100%);
 }
 
+form {
+	margin: 0 25px;
+}
+
+.textBox, .textArea {
+	width: 100%;
+	margin: 10px 200px 10px 0;
+	
+}
+
+.textBox {
+	line-height: 20px;
+}
+
+.textArea {
+	display: block;
+	height: 250px;
+}
+
 .mainBody {
 	clear: both;
 	width: 650px;
 	float: left;
 	background-color: #ffffff;
 	border: thin solid #cccccc;
+	margin-bottom: 50px;
 }
 
 .sideBar {
@@ -73,6 +94,17 @@ footer {
 	margin: 5px 0 15px 10px;
 	/*margin-bottom
 	margin-left: 10px;*/
+}
+
+#submitButton {
+	background: #4aaaa5;
+	border: none;
+	margin-bottom: 25px;
+	color: #ffffff;
+	font-size: 18px;
+	padding: 10px 15px;
+	/*text-decoration: none;*/
+
 }
 
 #mainHeading {
@@ -102,8 +134,8 @@ footer {
 
 #wrapper {
 	width: 960px;
-	background: blue;
-	margin: 50px auto;
+	margin: 50px auto 0;
+	min-height: 100%;
 }
 
 #contact, #portfolio, #about {
@@ -124,4 +156,63 @@ footer {
 
 #intro {
 	margin: 0 25px 25px;
+}
+ 
+.portfolioImages {
+	/*width: 75%;
+	height: auto;*/
+	margin: 25px;
+	position: relative;	
+	display: inline-block;
+}
+
+/*#hangman, #rpgGame, #trivia, #widget, #rockPaper {
+	position: relative;
+	float: left;
+	width: 25%;
+	height: auto;
+
+}*/
+
+.captions {
+	position: absolute;
+	background: #4aaaa5;
+	color: #ffffff;
+	font-size: 18px;
+	text-align: center;
+	width: 270px;
+	line-height: 200%;
+	margin-top: 125px;
+	/*bottom: 20px;
+	left: 0;*/
+}
+
+.container {
+	width: 270px;
+	height: 250px;
+	border: 2px solid #cccccc;
+	margin: 25px 25px;
+	float: left;
+	
+	/*position: relative;*/
+}
+
+#hangman {
+	background-image: url("../images/bike.jpg");
+}
+
+#rpgGame {
+	background-image: url("../images/vegas.jpg");
+}
+
+#trivia {
+	background-image: url("../images/board.jpg");
+}
+
+#widget {
+	background-image: url("../images/lambo.jpg");
+}
+
+#rockPaper {
+	background-image: url("../images/linux.jpg");
 }
