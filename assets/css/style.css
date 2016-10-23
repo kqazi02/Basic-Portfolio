@@ -43,9 +43,10 @@ h2 {
 
 header{
 	border-bottom: 3px solid #cccccc;
-	height: 79px;
+	height: 80px;
 	padding: 0 14.85%;
 	background-color: #ffffff;
+	overflow: auto;
 }
 
 nav {
